@@ -1,0 +1,5 @@
+ru:
+  permission_import_time_entries: Импорт трудозатрат
+  label_import_notifications: Послать уведомления по email в течение импорта
+  label_import_time_entries: Импорт трудозатрат
+  label_import_users: Импорт пользователей

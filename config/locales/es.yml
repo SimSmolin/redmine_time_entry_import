@@ -1,0 +1,5 @@
+es:
+  permission_import_time_entries: Importar registros de tiempo
+  label_import_notifications: Enviar notificaciones de correo electrónico durante la importación
+  label_import_time_entries: Importar registros de tiempo
+  label_import_users: Import users

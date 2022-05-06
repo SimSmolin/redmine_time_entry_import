@@ -1,0 +1,6 @@
+pl:
+  label_import_notifications: Wyślij powiadomienia e-mail podczas importu
+  permission_import_time_entries: Import dziennika
+  label_select_file_to_import: Wybierz plik do importu
+  label_import_time_entries: Importuj wpisy dziennika
+  label_import_users: Importuj użytkowników

@@ -1,0 +1,7 @@
+sq:
+  label_import_notifications: Dërgo njoftime me email gjatë importimit
+  permission_import_time_entries: Importoni zëra kohorë
+  label_select_file_to_import: Përzgjidhni kartelë për importim
+  button_import: Importoje
+  label_import_time_entries: Importoni zëra kohe
+  label_import_users: Importoni përdorues

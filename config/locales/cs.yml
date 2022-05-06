@@ -1,0 +1,5 @@
+cs:
+  permission_import_time_entries: Import stráveného času
+  label_import_notifications: Odeslat emailové notifikace během importu
+  label_import_time_entries: Import stráveného času
+  label_import_users: Import uživatelů

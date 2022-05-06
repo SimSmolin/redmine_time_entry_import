@@ -1,0 +1,5 @@
+gl:
+  permission_import_time_entries: Importar tempos dedicados
+  label_import_notifications: Enviar notificacións de correo durante a importación
+  label_import_time_entries: Importar tempos dedicados
+  label_import_users: Importar usuarios

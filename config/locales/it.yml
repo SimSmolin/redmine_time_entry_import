@@ -1,0 +1,5 @@
+it:
+  permission_import_time_entries: Importa tempo impiegato
+  label_import_notifications: Send email notifications during the import
+  label_import_time_entries: Importa tempo impiegato
+  label_import_users: Import users
