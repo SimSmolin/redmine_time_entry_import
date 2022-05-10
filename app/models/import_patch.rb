@@ -133,10 +133,10 @@ module ImportPatch
       started_on = Time.now
 
       read_items do |row, position|
-        # if (max_items && imported >= max_items) || (max_time && Time.now >= started_on + max_time)
-        #   interrupted = true
-        #   break
-        # end
+        if (max_items && imported >= max_items) || (max_time && Time.now >= started_on + max_time)
+          interrupted = true
+          break
+        end
         if position > resume_after
           item = items.build
           item.position = position

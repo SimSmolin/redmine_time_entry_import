@@ -1,0 +1,4 @@
+<% content = render :parent %>
+<% html = Nokogiri::HTML.fragment(content) %>
+<% html.at_css("div.contextual") << link_to( l(:button_import), new_users_import_path, :class => 'icon icon-import') %>
+<%= raw html %>

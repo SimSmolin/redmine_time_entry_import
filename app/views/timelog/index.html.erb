@@ -1,0 +1,5 @@
+<% content = render :parent %>
+<% html = Nokogiri::HTML.fragment(content) %>
+<% html.at_css("div.contextual") << link_to( l(:button_import), new_time_entries_import_path(:project_id => @project),
+            :class => 'icon icon-import') if User.current.allowed_to?(:log_time, @project, :global => true) %>
+<%= raw html %>

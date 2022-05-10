@@ -32,6 +32,7 @@ module ImportsHelperPatch
   end
 
   module InstanceMethods
+
     def import_title
       l(:"label_import_#{import_partial_prefix}")
     end

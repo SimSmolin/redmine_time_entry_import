@@ -3,3 +3,5 @@ en-GB:
   label_import_notifications: Send email notifications during the import
   label_import_time_entries: Import time entries
   label_import_users: Import users
+  download_to_fixed_issue: Download to fixed issue
+  get_from_field: or get from field

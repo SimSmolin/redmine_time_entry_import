@@ -53,7 +53,8 @@ class TimeEntryImport < Import
   end
 
   def allowed_target_issues
-    project.issues
+    # только открытые задачи
+    project.issues.where("issues.status_id IN (SELECT id FROM issue_statuses WHERE is_closed=0)")
   end
 
   def allowed_target_users
