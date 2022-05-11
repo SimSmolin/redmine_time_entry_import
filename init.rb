@@ -57,5 +57,16 @@ Redmine::Plugin.register :redmine_time_entry_import do
   #   IssuesController.send(:helper, CustomFieldsHelperAdd)
   #   IssuesController.send(:helper, IssuesHelperAdd)
   # end
+  require 'dispatcher' unless Rails::VERSION::MAJOR >= 3
+
+  if Rails::VERSION::MAJOR >= 3
+    ActionDispatch::Callbacks.to_prepare do
+      require_dependency 'redmine_time_entry_import/hooks'
+    end
+  else
+    Dispatcher.to_prepare :redmine_time_entry_import do
+      require_dependency 'redmine_time_entry_import/hooks'
+    end
+  end
 
 end
