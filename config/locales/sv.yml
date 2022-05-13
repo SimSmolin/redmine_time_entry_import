@@ -3,3 +3,6 @@ sv:
   label_import_notifications: Skicka underrättelser med epost under importen
   label_import_time_entries: Importera tidsangivelser
   label_import_users: Import users
+  error_not_allowed_to_log_time_for_other_users: Du får inte logga tid
+    för andra användare
+  permission_log_time_for_other_users: Logga spenderad tid för andra användare

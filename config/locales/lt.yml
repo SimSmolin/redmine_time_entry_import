@@ -3,3 +3,5 @@ lt:
   label_import_notifications: Importavimo metu išsiusti el. pašto pranešimą
   label_import_time_entries: Importuoti laiko įrašus
   label_import_users: Importuoti naudotojus
+  error_not_allowed_to_log_time_for_other_users: Jūs negalite nurodyti kitų naudotojų darbo trukmes
+  permission_log_time_for_other_users: Galima nurodyti kitų naudotojų darbo trukmes

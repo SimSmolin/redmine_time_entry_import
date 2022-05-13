@@ -3,3 +3,6 @@ pt-BR:
   label_import_notifications: Enviar notificações por e-mail durante a importação
   label_import_time_entries: Importar tempo gasto
   label_import_users: Import users
+  error_not_allowed_to_log_time_for_other_users: Você não possuí permissão para registrar o tempo
+    para outros usuários
+  permission_log_time_for_other_users: Tempo de registro gasto para outros usuários

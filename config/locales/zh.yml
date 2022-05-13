@@ -3,3 +3,5 @@ zh:
   label_import_notifications: 在导入期间发送电子邮件通知
   label_import_time_entries: 导入工时条目
   label_import_users: 导入用戶
+  error_not_allowed_to_log_time_for_other_users: 不允许为其他用户记录时间
+  permission_log_time_for_other_users: 记录其他用户的工时

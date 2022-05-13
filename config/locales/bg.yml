@@ -1,3 +1,5 @@
 bg:
   label_import_time_entries: Импортиране на записи за използвано време
   label_import_users: Импортиране на потребители
+  error_not_allowed_to_log_time_for_other_users: Вие нямате разрешение да записвате изразходвано време за други потребители
+  permission_log_time_for_other_users: Записване на изразходвано време за други потребители

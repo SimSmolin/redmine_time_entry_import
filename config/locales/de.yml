@@ -3,3 +3,5 @@ de:
   label_import_notifications: Versende E-Mail-Benachrichtigungen während des Imports
   label_import_time_entries: Zeitbuchungen importieren
   label_import_users: Benutzer importieren
+  error_not_allowed_to_log_time_for_other_users: Sie sind nicht berechtigt, Aufwände für andere Benutzer zu buchen.
+  permission_log_time_for_other_users: Aufwände für andere Benutzer buchen

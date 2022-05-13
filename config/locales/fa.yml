@@ -3,3 +3,5 @@ fa:
   label_import_notifications: در هنگام وارد کردن ، رایانامه‌های آگاه‌سازی را بفرست
   label_import_time_entries: ورود زمان‌ها
   label_import_users: Import users
+  error_not_allowed_to_log_time_for_other_users: "شما اجازه ثبت زمان برای سایر کاربران را ندارید"
+  permission_log_time_for_other_users: ثبت زمان برای سایر کاربران

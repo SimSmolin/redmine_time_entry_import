@@ -3,3 +3,5 @@ fr:
   label_import_notifications: "Envoyer les notifications durant l'import"
   label_import_time_entries: "Importer des temps passés"
   label_import_users: Importer les utilisateurs
+  error_not_allowed_to_log_time_for_other_users: "Vous n'êtes pas autorisé à saisir le temps passé pour d'autres utilisateurs"
+  permission_log_time_for_other_users: "Saisir le temps passé pour d'autres utilisateurs"

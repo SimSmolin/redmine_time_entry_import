@@ -3,3 +3,6 @@ pt:
   label_import_notifications: Send email notifications during the import
   label_import_time_entries: Import time entries
   label_import_users: Import users
+  error_not_allowed_to_log_time_for_other_users: You are not allowed to log time
+    for other users
+  permission_log_time_for_other_users: Log spent time for other users

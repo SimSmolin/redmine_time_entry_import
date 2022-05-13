@@ -101,7 +101,6 @@ class TimeEntryImport < Import
   def build_object(row, item)
     object = TimeEntry.new
     #    object.author = user
-    object.user_id = user.id
 
     activity_id = nil
     if activity
@@ -120,6 +119,7 @@ class TimeEntryImport < Import
     else
       user_id = user.id
     end
+    object.user_id = user_id
 
     attributes = {
       :activity_id => activity_id,

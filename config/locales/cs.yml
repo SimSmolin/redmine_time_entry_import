@@ -3,3 +3,6 @@ cs:
   label_import_notifications: Odeslat emailové notifikace během importu
   label_import_time_entries: Import stráveného času
   label_import_users: Import uživatelů
+  error_not_allowed_to_log_time_for_other_users: Nejste oprávněni k zápisu času
+    ostatních uživatelů
+  permission_log_time_for_other_users: Záznam stráveného času ostatních uživatelů

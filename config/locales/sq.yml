@@ -5,3 +5,5 @@ sq:
   button_import: Importoje
   label_import_time_entries: Importoni zëra kohe
   label_import_users: Importoni përdorues
+  error_not_allowed_to_log_time_for_other_users: "S’keni leje të regjistroni kohë për përdorues të tjerë"
+  permission_log_time_for_other_users: Të regjistrojë kohë të shpenzuar për përdorues të tjerë

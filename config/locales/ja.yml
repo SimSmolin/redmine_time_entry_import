@@ -3,3 +3,5 @@ ja:
   label_import_notifications: インポート中のメール通知
   label_import_time_entries: 作業時間のインポート
   label_import_users: ユーザーのインポート
+  error_not_allowed_to_log_time_for_other_users: 他のユーザーの作業時間を入力する権限がありません
+  permission_log_time_for_other_users: 他のユーザーの作業時間の入力

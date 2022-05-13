@@ -46,11 +46,13 @@
 
   <div class="splitcontentright">
   <% @custom_fields.each do |field| %>
-    <p>
-      <label for="import_mapping_cf_<%= field.id %>"><%= field.name %></label>
-      <%= mapping_select_tag @import, "cf_#{field.id}", :required => field.is_required? %>
-    </p>
-  <% end %>
+    <% if field[:format_store][:participant_period_close] != "1" %>
+      <p>
+        <label for="import_mapping_cf_<%= field.id %>"><%= field.name %></label>
+        <%= mapping_select_tag @import, "cf_#{field.id}", :required => field.is_required? %>
+      </p>
+      <% end %>
+    <% end %>
   </div>
 </div>
 <%= javascript_tag do %>

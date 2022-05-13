@@ -5,3 +5,5 @@ ru:
   label_import_users: Импорт пользователей
   download_to_fixed_issue: Загрузить в одну задачу
   get_from_field: или взять № из поля
+  error_not_allowed_to_log_time_for_other_users: Вам не разрешено учитывать время для других пользователей
+  permission_log_time_for_other_users: Учитывать(импортировать) время других пользователей

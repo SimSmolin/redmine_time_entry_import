@@ -4,3 +4,5 @@ pl:
   label_select_file_to_import: Wybierz plik do importu
   label_import_time_entries: Importuj wpisy dziennika
   label_import_users: Importuj użytkowników
+  error_not_allowed_to_log_time_for_other_users: Nie jesteś upoważniony do zapisywania czasu dla innych użytkowników
+  permission_log_time_for_other_users: Zapisywanie przepracowanego czasu dla innych użytkowników

@@ -3,3 +3,6 @@ es:
   label_import_notifications: Enviar notificaciones de correo electrónico durante la importación
   label_import_time_entries: Importar registros de tiempo
   label_import_users: Import users
+  error_not_allowed_to_log_time_for_other_users: No está autorizado a registrar tiempo para
+    otros usuarios
+  permission_log_time_for_other_users: Registrar tiempo para otros usua

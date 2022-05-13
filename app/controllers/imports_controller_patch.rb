@@ -21,7 +21,6 @@ require 'csv'
 module ImportsControllerPatch
   def self.included(base) # :nodoc:
     base.send(:include, InstanceMethods)
-    # base.send(:include, IssuesHelperAdd)
 
     base.class_eval do
       layout :import_layout
@@ -174,64 +173,3 @@ module ImportsControllerPatch
 
   end
 end
-# class ImportsController < ApplicationController
-#   before_action :find_import, :only => [:show, :settings, :mapping, :run]  # not changed
-#   before_action :authorize_import # решил не переносить
-#
-#   helper :issues # not changed
-#   helper :queries # not changed
-#
-#   def show # not changed
-#   end
-#
-#   def run # not changed
-#     if request.post?
-#       @current = @import.run(
-#         :max_items => max_items_per_request,
-#         :max_time => 10.seconds
-#       )
-#       respond_to do |format|
-#         format.html do
-#           if @import.finished?
-#             redirect_to import_path(@import)
-#           else
-#             redirect_to import_run_path(@import)
-#           end
-#         end
-#         format.js
-#       end
-#     end
-#   end
-#
-#   def current_menu(project) # решил не переносить
-#     if import_layout == 'admin'
-#       nil
-#     else
-#       :application_menu
-#     end
-#   end
-#
-#   private
-#
-#   def find_import # not changed
-#     @import = Import.where(:user_id => User.current.id, :filename => params[:id]).first
-#     if @import.nil?
-#       render_404
-#       return
-#     elsif @import.finished? && action_name != 'show'
-#       redirect_to import_path(@import)
-#       return
-#     end
-#     update_from_params if request.post?
-#   end
-#
-#   def max_items_per_request # not changed
-#     5
-#   end
-#
-#   def authorize_import # решил не переносить
-#     return render_404 unless import_type
-#     return render_403 unless import_type.authorized?(User.current)
-#   end
-#
-# end

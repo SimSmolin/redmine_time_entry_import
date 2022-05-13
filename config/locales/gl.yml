@@ -3,3 +3,5 @@ gl:
   label_import_notifications: Enviar notificacións de correo durante a importación
   label_import_time_entries: Importar tempos dedicados
   label_import_users: Importar usuarios
+  error_not_allowed_to_log_time_for_other_users: Vostede non ten permitido imputar tempo para outros usuarios
+  permission_log_time_for_other_users: Imputar tempo dedicado a outros usuarios
