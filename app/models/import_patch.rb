@@ -41,7 +41,7 @@ module ImportPatch
         nil
       end
 
-      def self.authorized?(user)
+      def self.authorized?(user, project)
         user.admin?
       end
 

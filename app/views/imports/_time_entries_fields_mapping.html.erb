@@ -27,7 +27,7 @@
                       :values => @import.allowed_target_issues.map {|t| [t.id, t.id]} %>
   </p>
   <p>
-    <label for="import_mapping_issue_id"><%= l(:get_from_field) %></label>
+    <label for="import_mapping_issue_id"><%= l(:get_issue_id_from_field) %></label>
     <%= mapping_select_tag @import, 'issue_id', :disabled => true %>
   </p>
   <p>

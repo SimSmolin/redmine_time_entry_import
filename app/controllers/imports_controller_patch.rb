@@ -24,7 +24,8 @@ module ImportsControllerPatch
 
     base.class_eval do
       layout :import_layout
-      # unloadable
+      before_action :authorize_import
+      unloadable
       alias_method :new, :new_with_patch
       alias_method :create, :create_with_patch
       alias_method :settings, :settings_with_patch
@@ -35,6 +36,12 @@ module ImportsControllerPatch
   end
 
   module InstanceMethods
+    def authorize_import
+      @project ||= (params[:project_id] && Project.find(params[:project_id]) || @import&.project)
+      return render_404 unless import_type
+      return render_403 unless import_type.authorized?(User.current, @project)
+    end
+
     def new_with_patch
       @import = import_type.new
     end

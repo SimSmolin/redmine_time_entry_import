@@ -19,7 +19,7 @@
 
 class TimeEntryImport < Import
   AUTO_MAPPABLE_FIELDS = {
-    'activity' => 'field_activity',
+    # 'activity' => 'field_activity',
     'user' => 'field_user',
     'issue_id' => 'field_issue',
     'spent_on' => 'field_spent_on',
@@ -31,8 +31,8 @@ class TimeEntryImport < Import
     :time_entries
   end
 
-  def self.authorized?(user)
-    user.allowed_to?(:import_time_entries, nil, :global => true)
+  def self.authorized?(user, project)
+    user.allowed_to?(:import_time_entries, project, :global => false)
   end
 
   # Returns the objects that were imported

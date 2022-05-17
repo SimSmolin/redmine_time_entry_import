@@ -21,12 +21,15 @@ module IssueImportPatch
     base.send(:include, InstanceMethods)
 
     base.class_eval do
-      # define_method :import_title, instance_method(:import_title)
-      # define_method :import_partial_prefix, instance_method(:import_partial_prefix)
       alias_method :build_object, :build_object_with_patch
-      # alias_method :mapping_select_tag, :mapping_select_tag_with_patch
-      # alias_method :date_format_options, :date_format_options_with_patch
 
+      def self.menu_item
+        :issues
+      end
+
+      def self.authorized?(user, project)
+        user.allowed_to?(:import_issues, project, :global => false)
+      end
     end
   end
 
