@@ -23,13 +23,14 @@ end
 Redmine::Plugin.register :redmine_time_entry_import do
   name 'Import Time Entry records from file plugin'
   author 'Sergey Melnikov'
-  description 'This is a plugin for Redmine. Allow control download time entry records from file'
-  version '0.1.0'
+  description 'This is a plugin for Redmine. Allow download time entry records from file'
+  version '0.1.2'
   url 'https://github.com/SimSmolin/redmine_time_entry_import.git'
   author_url 'https://github.com/SimSmolin'
 
   project_module :time_tracking do
     permission :log_time_for_other_users, {}, :require => :loggedin
+    permission :import_time_entries, {}, :require => :loggedin
   end
 
   require 'dispatcher' unless Rails::VERSION::MAJOR >= 3

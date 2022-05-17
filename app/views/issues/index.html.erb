@@ -1,6 +1,8 @@
 <% content = render :parent %>
 <% html = Nokogiri::HTML.fragment(content) %>
-<% if User.current.allowed_to?(:add_issues, @project, :global => true) && (@project.nil? || Issue.allowed_target_trackers(@project).any?)
+<% if User.current.allowed_to?(:add_issues, @project, :global => true) &&
+      User.current.allowed_to?(:import_issues, @project, :global => false) &&
+      (@project.nil? || Issue.allowed_target_trackers(@project).any?)
      html.at_css("div.contextual") << link_to( l(:button_import), new_issues_import_path(:project_id => @project), :class => 'icon icon-import')
    end
 %>
