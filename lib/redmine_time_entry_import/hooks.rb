@@ -1,5 +1,5 @@
 
-module ClipboardImagePaste
+module RedmineTimeEntryImport
   class Hooks  < Redmine::Hook::ViewListener
 
     # Add stylesheets and javascripts links to all pages
